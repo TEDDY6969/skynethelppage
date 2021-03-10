@@ -6,7 +6,7 @@ try {
 const embed = new Discord.RichEmbed()
   .setTitle("Invite the bot")
   .setColor('RANDOM')
-  .addField("Invite to Discord server", "[Invite the bot here (Recomended!)](" + `${cnf.website}` + "/authorize) \n[Invite the bot here (Normal)](https://discordapp.com/oauth2/authorize/?permissions=8&scope=bot&client_id=" + `${client.user.id})`)
+  .addField("Invite to Discord server", "[Invite the bot here (Recomended!)](" + `${cnf.website}` + "/authorize) \n[Invite the bot here (Normal)](https://discord.com/api/oauth2/authorize?client_id=819172557067386891&permissions=8&scope=bot" + `${client.user.id})`)
   .addField("Website", `[Visit webiste](${cnf.website})`)
   .addField("Server", `[Join to official server](${cnf.server})`)
   .setFooter("Bot created by " + `${cnf.owner}`)
