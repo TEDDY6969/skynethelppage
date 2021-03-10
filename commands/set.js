@@ -18,9 +18,9 @@ if (args[0] == 'welcome') {
     
 	let embed = new Discord.RichEmbed()
     .setColor("#FFFFFF")
-    .setDescription(`Welcome Channel is seted as ${channel} (Note: If you have a channel named "hello-or-bye" the welcome messages will be send it in.)`);
+    .setDescription(`Welcome Channel is seted as ${channel}`);
     message.channel.send(embed)
-  } else if(args[0] == 'bye') {
+  } else if(args[0] == 'Bye') {
 	  
 	let channel = message.mentions.channels.first()
     
