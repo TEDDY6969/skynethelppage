@@ -76,7 +76,7 @@ module.exports.run = async (client, message, args) => {
           .addField(":hammer: Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField(":rofl: Fun", Fun.map((roles => roles[0])).join(", ") || `No commands` ,)
 		  .addField(":notes: Music", Music.map((roles => roles[0])).join(", ") || `Soon!` ,)
-		  .addField(":moneybag: Economy system", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
+		  .addField(" Economy system", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField(":toolbox: Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField(":smirk: NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField(":grey_question: Command Information", `${prefix}` + " help <command>")
