@@ -875,21 +875,21 @@ setInterval(async () => {
         if (date == enddate) {
             statuslist.push(
                 `🎉 ${client.guilds.size} Servers 🎉`,
-                `🎉 ${client.users.size} Members 🎉`,
+                `🎉 ${client.users.size} Users 🎉`,
                 `🎉 ${prefix} help 🎉`,
                 `🎉 Happy Birthday Discord! 🎉`
             )
         } else if (date == enddateEEP) {
             statuslist.push(
                 `🔥 ${client.guilds.size} Servers 🔥`,
-                `🔥 ${client.users.size} Members 🔥`,
+                `🔥 ${client.users.size} Users 🔥`,
                 `🔥 ${prefix} help 🔥`,
                 `🔥 EEP 4 LIFE (04/18)! 🔥`
             )
         } else {
             statuslist.push(
                 `${client.guilds.size} Servers`,
-                `${client.users.size} Members`,
+                `${client.users.size} Users`,
                 `${prefix}help`
             )
         }
