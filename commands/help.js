@@ -69,8 +69,7 @@ module.exports.run = async (client, message, args) => {
             description: "Generating the help..."
         }}).then(msg=>{
         var embed = new Discord.RichEmbed()
-          .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL)
-          .sHere you can see all commands.If you feel like bot is missing something or has a bug ,please join our Support server
+          .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL) 
           .setColor("RANDOM")
           .setImage(client.AvatarURL)          
           .addField("<a:Hearth:819514793303212062> General", General.map((roles => roles[0])).join(", ") || `No commands` ,)
@@ -81,7 +80,8 @@ module.exports.run = async (client, message, args) => {
           .addField("<a:redBadge:819501788766928927> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Command Information", `${prefix}` + " help <command>")
-	      .setFooter(`Commands For Owner: ` + Owner.map((roles => roles[0])).join(", ") + `\nBot Created By Sakshyam • ${commandnum} Commands`,)     
+	      .setFooter(`Commands For Owner: ` + Owner.map((roles => roles[0])).join(", ") + `• ${commandnum} Commands`,)
+          .addField("Invite Link", `[Visit webiste](https://discordbotlist.com/bots/akemi-0216)`) .addF("Server", `[Join to official server](https://discord.gg/mTvdENRxJ4)`)
         msg.edit(embed);
         msg.edit("\u200B")
 		})
