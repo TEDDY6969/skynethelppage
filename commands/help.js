@@ -76,10 +76,10 @@ module.exports.run = async (client, message, args) => {
           .addField("<a:Setting:819578928527441940> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:WhiteHeart:819618778673184779> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
 		      .addField("<a:YayParty:819618033701617734> Features (Soon)", Music.map((roles => roles[0])).join(", ") || `Music!` ,)
-		      .addField("<a:redBadge:819501788766928927> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
+		      .addField("<a:success:819622263577116704> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:purple:819617929385214023> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
-          .addField("<a:redBadge:819501788766928927> Command Information", `${prefix}` + " help <command>")
+          .addField("<a:ver:819618891462344736> Command Information", `${prefix}` + " help <command>")
           .addField("<a:redBadge:819501788766928927> Help Us", `${prefix}` + "If You Want To Help Us Please Use The Following Links")
         .addField('<a:DE_HypesquadGold:819503430141214751> Useful Links', `[Invite](https://discordbotlist.com/bots/akemi-0216) | [ Support Server ](https://discord.gg/b44VXcVccg)`)
          msg.edit(embed);
