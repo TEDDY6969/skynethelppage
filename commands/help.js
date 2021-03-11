@@ -74,7 +74,7 @@ module.exports.run = async (client, message, args) => {
           .setImage(client.AvatarURL)          
           .addField("<a:Setting:819578928527441940> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:vrInstagram:819522520390041680> Information and Others", General.map((roles => roles[0])).join(", ") || `No commands` ,)
-          .addField("<a:WhiteHeart:819618778673184779> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
+          .addField("<a:yesil:819626942004330526> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
 		      .addField("<a:YayParty:819618033701617734> Features (Soon)", Music.map((roles => roles[0])).join(", ") || `Music , Giveaway!` ,)
 		      .addField("<a:success:819622263577116704> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:purple:819617929385214023> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
