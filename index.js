@@ -120,7 +120,7 @@ client.on("guildMemberAdd", (member) => {
      }
 
      let embed = new Discord.RichEmbed()
-      .setDescription(`**${member.displayName}#${member.user.discriminator}** has joined the server.`)
+      .setDescription(` <a:wlcm:819544394856136714> **${member.displayName}#${member.user.discriminator}** Has Joined The Server.`)
       .setThumbnail(member.user.displayAvatarURL)
       .setColor("RANDOM")
       .setTimestamp()
