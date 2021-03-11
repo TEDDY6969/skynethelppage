@@ -872,25 +872,23 @@ setInterval(async () => {
 
         ];
 
-        if (date == enddate) {
+  if (date == enddate) {
             statuslist.push(
-                `🎉 ${client.guilds.size} Servers 🎉`,
-                `🎉 ${client.users.size} Users 🎉`,
-                `🎉 ${prefix} help 🎉`,
-                `🎉 Happy Birthday Discord! 🎉`
+                `🎉 ${client.users.size} Users | ${client.guilds.size} Servers`,
+                `🎉 ${client.users.size} Users | ${client.guilds.size} Servers`,
+                `🎉 ${client.users.size} Users | ${client.guilds.size} Servers`,
             )
         } else if (date == enddateEEP) {
             statuslist.push(
-                `🔥 ${client.guilds.size} Servers 🔥`,
-                `🔥 ${client.users.size} Users 🔥`,
-                `🔥 ${prefix} help 🔥`,
-                `🔥 EEP 4 LIFE (04/18)! 🔥`
+                `🔥 ${client.users.size} Users | ${client.guilds.size} Servers`,
+                `🔥 ${client.users.size} Users | ${client.guilds.size} Servers`,
+                `🎉 ${client.users.size} Users | ${client.guilds.size} Servers`,
             )
         } else {
             statuslist.push(
-                `${client.guilds.size} Servers`,
-                `${client.users.size} Users`,
-                `${prefix}help`
+                `${client.users.size} Users | ${client.guilds.size} Servers`,
+                `${client.users.size} Users | ${client.guilds.size} Servers`,
+                `${client.users.size} Users | ${client.guilds.size} Servers`,
             )
         }
 
