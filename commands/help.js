@@ -81,7 +81,8 @@ module.exports.run = async (client, message, args) => {
           .addField("<a:redBadge:819501788766928927> NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Command Information", `${prefix}` + " help <command>")
 	      .setFooter(`Commands For Owner: ` + Owner.map((roles => roles[0])).join(", ") + `• ${commandnum} Commands`,)
-          .addField("Help us!", `[Invite](https://discordbotlist.com/bots/akemi-0216)`)
+          .addField("Help us!", `[<a:DE_HypesquadGold:819503430141214751> Invite](https://discord.com/oauth2/authorize/?permissions=8&scope=bot&client_id=819172557067386891)`)
+        .addField('<a:DE_HypesquadGold:819503430141214751> Useful Links', `[ <a:redBadge:819501788766928927> Official website](https://discordbotlist.com/bots/akemi-0216) | [ <a:redBadge:819501788766928927> Invite me!](https://discord.com/oauth2/authorize/?permissions=8&scope=bot&client_id=${client.user.id}) | [ <a:redBadge:819501788766928927> Official server](https://discord.gg/b44VXcVccg)`)
          msg.edit(embed);
         msg.edit("\u200B")
 		})
