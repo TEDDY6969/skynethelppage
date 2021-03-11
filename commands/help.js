@@ -72,17 +72,18 @@ module.exports.run = async (client, message, args) => {
           .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL) 
           .setColor("RANDOM")
           .setImage(client.AvatarURL)
-          .addField("<a:vrInstagram:819522520390041680> Information", General.map((roles => roles[0])).join(", ") || `No commands` ,)
-          .addField("<a:redBadge:819501788766928927> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
+          .addField("<a:vrInstagram:819522520390041680> Information and Others", General.map((roles => roles[0])).join(", ") || `No commands` ,)
+          .addField("<a:Setting:819578928527441940> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
-		  .addField("<a:redBadge:819501788766928927> Features (Soon)", Music.map((roles => roles[0])).join(", ") || `Music!` ,)
-		  .addField("<a:redBadge:819501788766928927> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
+		      .addField("<a:redBadge:819501788766928927> Features (Soon)", Music.map((roles => roles[0])).join(", ") || `Music!` ,)
+		      .addField("<a:redBadge:819501788766928927> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Command Information", `${prefix}` + " help <command>")
           .addField("<a:redBadge:819501788766928927> Help Us", `${prefix}` + "If You Want To Help Us Please Use The Following Links")
         .addField('<a:DE_HypesquadGold:819503430141214751> Useful Links', `[ <a:righter_arrow:819505137773051905> <a:redBadge:819501788766928927> Official website](https://discordbotlist.com/bots/akemi-0216) | [ <a:redBadge:819501788766928927> Invite me!](https://discord.com/oauth2/authorize/?permissions=8&scope=bot&client_id=${client.user.id}) | [ <a:redBadge:819501788766928927> Official server <a:lefter_arrow:819505226657824788> ](https://discord.gg/b44VXcVccg)`)
          msg.edit(embed);
+      timestamp: new Date(),
         msg.edit("\u200B")
 		})
       } else if (err) return;
