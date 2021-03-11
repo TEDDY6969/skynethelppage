@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     const lolid = new Discord.RichEmbed()
     .setThumbnail(mention.user.avatarURL)
     .setColor("RANDOM")
-    .addField('Here is ' + `${mention.user.username}\'s ID`, mention.id)
+    .addField(' <a:DE_HypesquadGold:819503430141214751> Here Is ' + `${mention.user.username}\'s ID`, mention.id)
     message.channel.send(lolid)  
 }
 

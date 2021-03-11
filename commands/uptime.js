@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
   
 const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
 let embed = new Discord.RichEmbed()
-.setTitle("Uptime")
+.setTitle("``Uptime``")
 .setDescription(`${duration}`)
 .setColor('RANDOM')
 

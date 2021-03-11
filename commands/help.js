@@ -66,7 +66,7 @@ module.exports.run = async (client, message, args) => {
       if (!command) {
 		message.channel.send({embed: {
             color: 3447003,
-            description: "Generating the help..."
+            description: " <a:Hearth:819514793303212062> Please Wait "
         }}).then(msg=>{
         var embed = new Discord.RichEmbed()
           .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL) 

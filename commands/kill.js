@@ -1,12 +1,12 @@
 const Discord = module.require("discord.js");
 var deaths = [
-  "[NAME1] ran over [NAME2] with a School Bus! :bus:",
-  "[NAME1] poisoned [NAME2]’s candy bar",
-  "[NAME2] swallowed a grenade",
-  "[NAME1] sent John Wick to kill [NAME2]!",
-  "[NAME1] pressed Ctrl+Alt+Del deleting [NAME2] from the Universe!",
-  "[NAME1] threw the ban hammer at [NAME2] for spamming",
-  "[NAME2] stepped on a lego brick"
+  "[NAME1] Ran over [NAME2] with a School Bus! :bus:",
+  "[NAME1] Poisoned [NAME2]’s candy bar",
+  "[NAME2] Swallowed a grenade",
+  "[NAME1] Sent John Wick to kill [NAME2]!",
+  "[NAME1] Pressed Ctrl+Alt+Del deleting [NAME2] from the Universe!",
+  "[NAME1] Hhrew The Ban Hammer at [NAME2] for spamming",
+  "[NAME2] Stepped On A Lego Brick"
 ];
 
 
