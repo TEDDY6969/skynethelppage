@@ -34,11 +34,11 @@ module.exports.run = async (client, message, args) => {
   const embed = new Discord.RichEmbed()
     .setAuthor("Members", message.guild.iconURL)
     .setColor("RANDOM")
-    .addField("Overall Members:", message.guild.memberCount || message.guild.members.size)
-    .addField("Online Members:", online)
-    .addField("Offline/Invisible Members:", offline)
-    .addField("Idle Members:", idle)
-    .addField("Do Not Disturb Members:", donotdisturb)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Overall Members:", message.guild.memberCount || message.guild.members.size)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Online Members:", online)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Offline/Invisible Members:", offline)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Idle Members:", idle)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Do Not Disturb Members:", donotdisturb)
   
   message.channel.send(embed);
 }

@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
 		if (message.author === mentioned) {
            return await message.channel.send({embed: {
                 color: 16734039,
-                description: "You cant kick yourself!"
+                description: "You Cant Kick Yourself!"
             }})
 		}
         if (!reason)
@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
     } else {
 	message.channel.send({embed: {
                     color: 16734039,
-                    description: "You don't have premission to kick members!"
+                    description: "You Don't Have Premission To Kick Members!"
                 }})
 	}
 }
