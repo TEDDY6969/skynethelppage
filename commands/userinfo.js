@@ -42,23 +42,23 @@ module.exports.run = async (client, message, args) => {
             url: member.user.displayAvatarURL
         },
         fields: [{
-            name: "Status",
+            name: " <a:DE_HypesquadGold:819503430141214751> Status",
             value: `${status[member.user.presence.status]}`
           },
           {
-            name: 'Game',
+            name: ' <a:DE_HypesquadGold:819503430141214751> Game',
             value: `${(member.user.presence.game && member.user.presence.game && member.user.presence.game.name) || 'Not playing a game'}`,
           },          
           {
-            name: "Roles",
+            name: " <a:DE_HypesquadGold:819503430141214751> Roles",
             value: `${member.roles.filter(r => r.id !== message.guild.id).map(roles => roles.name).join(", ") || "No Roles"}`
           },
           {
-            name: "Joined On",
+            name: " <a:DE_HypesquadGold:819503430141214751> Joined On",
             value: `${dateFormat(member.joinedAt)}`
           },
           {
-            name: "Created On",
+            name: " <a:DE_HypesquadGold:819503430141214751> Created On",
             value: `${dateFormat(member.user.createdAt)}`
           }
         ],

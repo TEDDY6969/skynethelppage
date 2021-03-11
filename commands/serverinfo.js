@@ -43,7 +43,6 @@ module.exports.run = async (client, message, args) => {
     .addField("Members <a:DE_HypesquadGold:819503430141214751> ", message.guild.memberCount, true)
     .addField("Verification Level <a:DE_HypesquadGold:819503430141214751> ", verifLevels[message.guild.verificationLevel], true)
     .addField("Channels <a:DE_HypesquadGold:819503430141214751> ", message.guild.channels.size, true)
-    .addField("Roles <a:DE_HypesquadGold:819503430141214751>  [" + ``${message.guild.roles.size}``` + "]", message.guild.roles.filter(r => r.id !== message.guild.id).map(roles => roles.name).join(", ") || "No Roles", true)
 	.addField("Emojis <a:DE_HypesquadGold:819503430141214751> [" + `${message.guild.emojis.size}` + "]", e.join(", ") || "No Emojis", true)
     .addField("Creation Date <a:DE_HypesquadGold:819503430141214751> ", `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)
 	.setTimestamp()
