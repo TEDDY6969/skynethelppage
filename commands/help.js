@@ -80,7 +80,7 @@ module.exports.run = async (client, message, args) => {
           .addField("<a:redBadge:819501788766928927> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> NSFW", NSFW.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Command Information", `${prefix}` + " help <command>")
-	      .setFooter(`Commands for Owner: ` + Owner.map((roles => roles[0])).join(", ") + `\nBot Created By Sakshyam • ${commandnum} Commands`,)     
+	      .setFooter(`Commands For Owner: ` + Owner.map((roles => roles[0])).join(", ") + `\nBot Created By Sakshyam • ${commandnum} Commands`,)     
         msg.edit(embed);
         msg.edit("\u200B")
 		})
