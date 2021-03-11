@@ -69,7 +69,7 @@ module.exports.run = async (client, message, args) => {
             description: " <a:Hearth:819514793303212062> Please Wait "
         }}).then(msg=>{
         var embed = new Discord.RichEmbed()
-          .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL) 
+          .setAuthor("Here You Can See All Commands of SkyNet.")
           .setColor("RANDOM")
           .setImage(client.AvatarURL)          
           .addField("<a:Setting:819578928527441940> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
