@@ -39,12 +39,12 @@ module.exports.run = async (client, message, args) => {
     .setThumbnail(message.guild.iconURL)
     .addField("Server Owner <a:DE_HypesquadGold:819503430141214751> ", serverowner.user.username + "#" + serverowner.user.discriminator, true)
 	.addField("ID <a:DE_HypesquadGold:819503430141214751> ", message.guild.id, true)
-    .addField("Region <a:DE_HypesquadGold:819503430141214751> ", region[message.guild.region] || message.guild.region, true)
-    .addField("Members <a:DE_HypesquadGold:819503430141214751> ", message.guild.memberCount, true)
-    .addField("Verification Level <a:DE_HypesquadGold:819503430141214751> ", verifLevels[message.guild.verificationLevel], true)
-    .addField("Channels <a:DE_HypesquadGold:819503430141214751> ", message.guild.channels.size, true)
-	.addField("Emojis <a:DE_HypesquadGold:819503430141214751> [" + `${message.guild.emojis.size}` + "]", e.join(", ") || "No Emojis", true)
-    .addField("Creation Date <a:DE_HypesquadGold:819503430141214751> ", `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Region ", region[message.guild.region] || message.guild.region, true)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Members ", message.guild.memberCount, true)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Verification Level ", verifLevels[message.guild.verificationLevel], true)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Channels  ", message.guild.channels.size, true)
+	.addField("   <a:DE_HypesquadGold:819503430141214751> Emojis [" + `${message.guild.emojis.size}` + "]", e.join(", ") || "No Emojis", true)
+    .addField(" <a:DE_HypesquadGold:819503430141214751> Creation Date ", `${message.channel.guild.createdAt.toUTCString().substr(0, 16)} (${checkDays(message.channel.guild.createdAt)})`, true)
 	.setTimestamp()
   
   message.channel.send(embed);

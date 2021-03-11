@@ -6,7 +6,7 @@ const rp = require('request-promise-native');
 
 module.exports.run = async (client, message, args) => {
     if (!message.channel.nsfw) {
-		message.react('💢');
+		message.react('<a:offred:819503612831989781>');
 		return message.channel.send({embed: {
                 color: 16734039,
                 description: "You can use this command in an NSFW Channel!"
