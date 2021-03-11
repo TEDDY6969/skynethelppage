@@ -72,7 +72,6 @@ module.exports.run = async (client, message, args) => {
           .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL) 
           .setColor("RANDOM")
           .setImage(client.AvatarURL)
-          .addField ("Here You Can See All Commands.If You Feel Like bot is missing something or has a bug" )
           .addField("<a:vrInstagram:819522520390041680> Information", General.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
