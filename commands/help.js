@@ -69,12 +69,13 @@ module.exports.run = async (client, message, args) => {
             description: "Generating the help..."
         }}).then(msg=>{
         var embed = new Discord.RichEmbed()
-          .setAuthor("Help", message.guild.iconURL)
+          .setAuthor(" SkyNet ツ Help and Command list", message.guild.iconURL)
+          .sHere you can see all commands.If you feel like bot is missing something or has a bug ,please join our Support server
           .setColor("RANDOM")
           .setImage(client.AvatarURL)          
-          .addField("<a:redBadge:819501788766928927> General", General.map((roles => roles[0])).join(", ") || `No commands` ,)
+          .addField("<a:Hearth:819514793303212062> General", General.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Moderation", Moderation.map((roles => roles[0])).join(", ") || `No commands` ,)
-          .addField("<a:redBadge:819501788766928927> Fun", Fun.map((roles => roles[0])).join(", ") || `No commands` ,)
+          .addField("<a:redBadge:819501788766928927> Fun", Fun.map((roles => roles[0])).join(", ")|| `No commands` ,)
 		  .addField("<a:redBadge:819501788766928927> Music", Music.map((roles => roles[0])).join(", ") || `Soon!` ,)
 		  .addField("<a:redBadge:819501788766928927> Economy System", Economy.map((roles => roles[0])).join(", ") || `No commands` ,)
           .addField("<a:redBadge:819501788766928927> Utility", Utility.map((roles => roles[0])).join(", ") || `No commands` ,)
