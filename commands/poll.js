@@ -15,7 +15,7 @@ const embed = new Discord.RichEmbed()
 .setTitle(":ballot_box: " +`${message.author.username}` + " A Vote Has Begun! React With The Emojis To Vote! :ballot_box:",)
 .setColor("RANDOM")
 .addField("Pool", pollmessage,)
-.setFooter("Note: The voting will be ended in 30 seconds! • Bot created by " + `Sakshyam`,)
+.setFooter("Note: The voting will be ended in 30 seconds!   ",)
 .setTimestamp()
 const pollTopic = await message.channel.send({embed})
 await pollTopic.react(`✅`);

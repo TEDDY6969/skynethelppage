@@ -82,7 +82,6 @@ module.exports.run = async (client, message, args) => {
           .addField("<a:DDD_starPurple:819627648984023132> Command Information", `${prefix}` + " help <command>")
           .addField("<a:redBadge:819501788766928927> Help Us", `${prefix}` + "If You Want To Help Us Please Use The Following Links")
         .addField('<a:DE_HypesquadGold:819503430141214751> Useful Links', `[ <a:righter_arrow:819505137773051905> Invite](https://discordbotlist.com/bots/akemi-0216) | [ Support Server <a:lefter_arrow:819505226657824788> ](https://discord.gg/b44VXcVccg)`)
-        .setImage("https://media.discordapp.net/attachments/804328021930672158/806734939282079805/Botgif.gif%22")
         msg.edit(embed);
       timestamp: new Date(),
         msg.edit("\u200B")
